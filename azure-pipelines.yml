@@ -9,8 +9,9 @@ trigger:
 #pool:
 #  vmImage: 'windows-latest'
 
-name: 'custom-agent'
-vmImage: 'demoselfhosted'  # Specify the Windows image for the build agent
+pool:
+  name: 'custom-agent'
+  vmImage: 'demoselfhosted'  # Specify the Windows image for the build agent
 
 variables:
   solution: '**/*.sln'
